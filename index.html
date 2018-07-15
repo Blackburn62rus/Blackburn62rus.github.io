@@ -5,11 +5,22 @@
     <!-- Тег meta для указания кодировки -->
     <meta charset="utf-8">
     <link href="main.css" rel="stylesheet" type="text/css"/>
+    <script src="jq.js"></script>
 </head>
 
 <body>
-    <script>
-        alert('kek');
+    <button id = 'h'>Саня, жми екарный бабай</button>
+    <script type="text/javascript">
+        $(function() {
+            $('#h').on('click', function() {
+                alert('Ты не Саня!!!');
+                do {
+                    var result = prompt('А кто ты?','');
+                } while(result == '')
+                alert('Нет, ты чмо!!');
+            })
+            
+        })
     </script>
 </body>
 
