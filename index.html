@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <header>
     <button id = 'h'>Саня, жми екарный бабай</button>
     <script type="text/javascript">
         $(function() {
@@ -17,11 +18,20 @@
                 do {
                     var result = prompt('А кто ты?','');
                 } while(result == '')
-                if ((result == 'Ирина')  || (result == 'Ира')) alert('Все будет хорошо, ты прелесть)'); else alert('Нет, ты чмо!!');
-            })
+                if ((result == 'Ирина')  || (result == 'Ира')) 
+                    alert('Все будет хорошо, ты прелесть)'); 
+                    else {
+                if ((result == 'София')  || (result == 'Софья')) { 
+                    alert('Да, ты София');
+                } else  {
+                        alert('Нет, ты чмо!!');
+                    }
+                }
+                })
             
         })
     </script>
+    </header>
 </body>
 
 </html>
