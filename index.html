@@ -9,19 +9,24 @@
 </head>
 
 <body>
+    <header>
     <button id = 'h'>Саня, жми екарный бабай</button>
     <script type="text/javascript">
         $(function() {
             $('#h').on('click', function() {
                 alert('Ты не Саня!!!');
+                var i = 0;
                 do {
+                    if (i != 0) alert("Врешь (-.-)!!!")
                     var result = prompt('А кто ты?','');
-                } while(result == '')
-                if ((result == 'Ирина')  || (result == 'Ира')) alert('Все будет хорошо, ты прелесть)'); else alert('Нет, ты чмо!!');
-            })
+                    i++;
+                } while(((result != 'Аня') && (result != 'Анна')));
+                  alert("О, привет. Как дела? Пиши в вк")
+                })
             
         })
     </script>
+    </header>
 </body>
 
 </html>
